@@ -1,17 +1,17 @@
 {
-  "name": "nestjs-unleash",
-  "version": "2.2.4",
+  "name": "@praqtics/nestjs-unleash",
+  "version": "0.0.1",
   "description": "Unleash integration for NestJS",
   "author": "Philipp Busse",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "bugs": {
-    "url": "https://github.com/pmb0/nestjs-unleash/issues"
+    "url": "https://github.com/praqtics/nestjs-unleash/issues"
   },
-  "homepage": "https://github.com/pmb0/nestjs-unleash#readme",
+  "homepage": "https://github.com/praqtics/nestjs-unleash#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmb0/nestjs-unleash.git"
+    "url": "git+https://github.com/praqtics/nestjs-unleash.git"
   },
   "husky": {
     "hooks": {
@@ -26,7 +26,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start:dev": "nodemon  --exec ts-node --files e2e/src/main.ts",
     "lint": "eslint --cache .",
-    "_postinstall": "is-ci || husky install",
+    "postinstall": "is-ci || husky install",
     "prepublish": "pinst --disable",
     "postpublish": "pinst --enable",
     "test": "jest",
